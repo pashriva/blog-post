@@ -1,21 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-body{
+.container {
+    width: 900px;
+    margin: 20px auto 0px auto;
+}
+
+.blog-post {
+    width: 75%;
+    padding-right: 30px;
+    position: relative;
+}
+
+.heading {
+
+}
+
+.otherpost{
+    margin-bottom: 40px;
+}
+
+.author-box {
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+
+body {
     font-size: 18px;
     font-family: Helvetica neue, Arial;
 }
 
-h1, h2{
+h1, h2 {
     color: green;
 }
 
 h1 {
     font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 h2 {
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-p{
+.main-text {
     text-align: justify;
+    margin-bottom: 20px;
 }
+
+.author-text {
+    font-size: 22px;
+    margin: 55px;
+    margin-left: 25px;
+}
+
+.dummytext{
+    width: 20%;
+    float:right;
+}
+
+/* The below selector selects all the img elements inside author-box class */
+.author-box img{
+    height: 150px;
+    width:  150px;
+    border-radius: 50%; /* border-radius makes the images round. A value of 50% = Nice Circle*/
+    float: left;
+}
+
+.blog-post img{
+    height: 100px;
+    width: auto; /* Setting width to auto after specifying the height of the image will maintain its aspect ratio */
+}
+
+.date{
+    font-style: oblique;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
